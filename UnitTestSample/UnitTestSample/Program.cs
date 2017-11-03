@@ -15,5 +15,9 @@ namespace UnitTestSample
         {
             return x + y;
         }
+        private string GetHoge(string value)
+        {
+            return value + "Hoge";
+        }
     }
 }

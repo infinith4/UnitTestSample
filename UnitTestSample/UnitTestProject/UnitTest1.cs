@@ -23,5 +23,15 @@ namespace UnitTestProject
             Assert.AreEqual(expected, actual);
             //期待値と実際の値が同一であるかを検証します。同一である場合にはテストが成功し、そうでない場合には失敗を返します。 
         }
+
+        [TestMethod]
+        public void GetHoge_Test()
+        {
+            var value = "ほげ";
+            var privateObj = new PrivateObject(new Program());
+            var result = privateObj.Invoke("GetHoge", value);
+
+            Assert.AreEqual(result.ToString(), value + "Hoge");
+        }
     }
 }
