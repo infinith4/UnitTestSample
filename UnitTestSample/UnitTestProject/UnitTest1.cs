@@ -83,6 +83,7 @@ namespace UnitTestProject
             Assert.AreEqual(result.ToString(), $"{value}Hoge");
         }
 
+        //https://webbibouroku.com/Blog/Article/access-property
         public void CheckProperty(Object expected_model, Object actual_model, AssertFailedException exception = null)
         {
             foreach (var item in expected_model.GetType().GetProperties())
