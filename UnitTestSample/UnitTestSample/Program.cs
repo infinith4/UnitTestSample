@@ -15,9 +15,13 @@ namespace UnitTestSample
         {
             return x + y;
         }
+        public int SubNumber(int x, int y)
+        {
+            return x - y;
+        }
         private string GetHoge(string value)
         {
-            return value + "Hoge";
+            return $"{value}Hoge";
         }
     }
 }
